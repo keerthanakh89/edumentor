@@ -8,7 +8,6 @@ app = FastAPI()
 # Step 2: Create tables
 Base.metadata.create_all(bind=engine)
 
-
 # Root API
 @app.get("/")
 def read_root():

@@ -5,7 +5,6 @@ from .database import engine, Base, SessionLocal
 from . import models
 # Step 1: Create FastAPI app FIRST
 app = FastAPI()
-
 # Step 2: Create tables
 Base.metadata.create_all(bind=engine)
 

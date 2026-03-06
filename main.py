@@ -19,7 +19,6 @@ def get_db():
     finally:
         db.close()
 
-
 # Input schema
 class IAInput(BaseModel):
     student_name: str

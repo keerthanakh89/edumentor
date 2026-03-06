@@ -9,8 +9,6 @@ app = FastAPI()
 
 # Create tables in database
 Base.metadata.create_all(bind=engine)
-
-
 # Root endpoint
 @app.get("/")
 def read_root():

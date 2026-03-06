@@ -26,7 +26,6 @@ class IAInput(BaseModel):
     ia1: float
     ia2: float
     attendance: float
-
 # Upload IA API
 @app.post("/upload-ia/")
 def upload_ia(data: IAInput, db: Session = Depends(get_db)):

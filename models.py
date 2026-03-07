@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from .database import engine, Base, SessionLocal
 from . import models
-
 # Create FastAPI instance FIRST
 app = FastAPI()
 

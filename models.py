@@ -11,7 +11,6 @@ Base.metadata.create_all(bind=engine)
 @app.get("/")
 def read_root():
     return {"message": "EduMentor Backend Running 🚀"}
-
 # Database dependency
 def get_db():
     db = SessionLocal()
